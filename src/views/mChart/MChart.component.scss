@@ -1,0 +1,19 @@
+/*图表统计模块*/
+.echarts {
+  width: 100%;
+  height: 100%;
+}
+.chart {
+  height: 100vh;
+  .container-fluid{
+    height: calc(100% - 62px);
+    .chart-date{
+      height: 50px;
+      width: 200px;
+      z-index: 2099;
+    }
+    .chart-sell{
+     height: 100%;
+   }
+  }
+}

@@ -1,0 +1,99 @@
+.login {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../../assets/images/bg01.png');
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  background-position: center center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 3vw;
+  .login-form{
+    height: auto;
+    width: 45vh;
+    background: #fff;
+    position: relative;
+    .form-circle{
+      width: 100px;
+      height: 100px;
+      background: #fff;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      color: red;
+      line-height: 100px;
+      .iconshouyintai{
+        font-size: 3.2rem;
+        color: #468F7F;
+      }
+    }
+    .form-group{
+      text-align: center;
+      color: $bg_48907F;
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+      .form-control{
+        position: relative;
+        border-color: transparent;
+        background-color: $bg_EFFBF1;
+        color: $font_9ADCCF;
+        font-size: 0.8rem;
+        &::placeholder{
+          color: $font_9ADCCF;
+          font-size: 0.8rem;
+        }
+      }
+      .form-control.is-invalid{
+        border-color: #dc3545;
+      }
+      .dropdown-toggle::after{
+        position: absolute;
+        transform: translateY(100%);
+        right: 15px;
+      }
+      .dropdown-menu{
+        width: 100%;
+        max-height: 30vh;
+        transform: translate3d(0px, 170px, 0px)!important;
+        top: -17px!important;
+        text-align: center;
+        .dropdown-item{
+          color: $bg_468E80;
+          font-size: 0.8rem;
+          &:hover{
+            background-color: $font_9ADCCF;
+          }
+        }
+      }
+      .dropdown { background: red !important }
+      .btn-primary{
+        background-color: $bg_468E80;
+        border: none;
+      }
+    }
+    .form-check{
+      margin-bottom: 0.5rem;
+      text-align: left;
+      margin-left: 0.3rem;
+      .form-check-input{
+        left: 35px;
+      }
+      label{
+        margin-bottom: 0;
+      }
+      span.align-middle{
+        font-size: 0.8rem;
+        color: $bg_468E80;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .login {
+    padding-right: 0;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,18 @@
+.merchant {
+  height: 100vh;
+  background-color: #F3F3F3;
+  .container-fluid{
+    height: calc(100% - 62px);
+    /deep/ .table .thead-info th {
+      color: #fff;
+      background-color: #17A2B8;
+      border-color: #17A2B8;
+    }
+  }
+}
+/*图表统计模块*/
+.echarts {
+  width: 100%;
+  height: 100%;
+}
+
