@@ -36,7 +36,7 @@ export default function barTopGetData (data, y_data) {
       type: 'category',
       inverse: false,
       splitLine: {show: false},
-      data: y_data,
+      data: y_data.reverse(),
       axisLabel: {
         margin: 20,
       },
@@ -59,7 +59,7 @@ export default function barTopGetData (data, y_data) {
           }
         },
         barWidth: '30px',
-        data: data,
+        data: data.reverse(),
       }
     ]
   }

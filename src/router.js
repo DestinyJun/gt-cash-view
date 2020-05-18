@@ -25,7 +25,7 @@ const routes = new Router({
     },
     {
       path: '/merchant',
-      name: '服务区图表统计',
+      name: '服务区图表统计2',
       component: () => import('@/views/Merchant/Merchant.vue')
     },
     {

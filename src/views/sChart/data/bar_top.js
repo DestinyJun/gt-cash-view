@@ -33,11 +33,10 @@ export default function barTopGetData (data, y_data) {
       },
     },
     yAxis: {
-
       type: 'category',
       inverse: false,
       splitLine: {show: false},
-      data: y_data,
+      data: y_data.reverse(),
       axisLabel: {
         margin: 20,
       },

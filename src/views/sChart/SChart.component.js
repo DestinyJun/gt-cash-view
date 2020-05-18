@@ -18,7 +18,9 @@ import barTopGetData from './data/bar_top'
 import barTopProGetData from './data/bar_topPro'
 import pieSellGetData from './data/pie_sell'
 // date
-import DatePicker from 'vue2-datepicker'
+import DatePicker from 'vue2-datepicker';
+import 'vue2-datepicker/index.css';
+import 'vue2-datepicker/locale/zh-cn';
 import moment from 'moment'
 
 export default {

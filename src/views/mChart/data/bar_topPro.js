@@ -52,7 +52,7 @@ export default function barTopProGetData(name,value) {
             fontSize: '12',
           }
         },
-        data: name
+        data: name.reverse()
       },
       // 排名
       {
