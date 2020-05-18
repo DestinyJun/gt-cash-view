@@ -8,10 +8,7 @@
             <date-picker v-model="d_date" valueType="format" :first-day-of-week="1" @change="dateChange($event)"></date-picker>
           </div>
           <div class="chart-sell">
-            <v-chart :options="d_barSell"
-              ref="bar" theme="ovilia-green" autoresize
-              @click="barClick($event)">
-            </v-chart>
+            <v-chart :options="d_barSell" ref="bar" theme="ovilia-green" autoresize @click="barClick($event)"></v-chart>
           </div>
         </div>
       </div>
@@ -49,5 +46,5 @@
 </template>
 <script src="./SChart.component.js"></script>
 <style scoped lang="scss">
-  @import "./SChart.component";
+  @import "SChart.component";
 </style>
