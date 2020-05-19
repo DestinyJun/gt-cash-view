@@ -83,6 +83,9 @@ export default {
     },
     // 时间改变函数
     dateChange(e) {
+      if (e === null) {
+        return;
+      }
       this.d_date = e;
       // 服务器销售排名
       this.post('/dataview/getservertop',{date: this.d_date, pageNum: '1',pageSize: '10000',})
